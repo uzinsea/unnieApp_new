@@ -14,16 +14,20 @@
 
         <TextView
             style="@style/MenuTextStyle"
-            android:backgroundTint="#ffda77"
+
             android:layout_width="match_parent"
             android:layout_height="120dp"
+            android:layout_marginHorizontal="50dp"
             android:layout_marginTop="150dp"
-            android:background="@drawable/round" />
+            android:background="@drawable/round"
+            android:backgroundTint="#ffda77" />
 
         <TextView
             style="@style/MenuTextStyle"
+
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:layout_marginHorizontal="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/round"
             android:backgroundTint="#e4e978"
@@ -31,17 +35,22 @@
 
         <TextView
             style="@style/MenuTextStyle"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/round"
             android:backgroundTint="#dbf6e9"
             android:text="금주의 행사" />
-s
+        s
+
         <TextView
             style="@style/MenuTextStyle"
+
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:layout_marginHorizontal="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/round"
             android:backgroundTint="#e4e978"
