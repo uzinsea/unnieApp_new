@@ -4,24 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7CF8F7DE"
     android:orientation="vertical"
     tools:context=".MainActivity3">
 
-
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/applogo2" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/login" />
+
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="80dp"
-            android:layout_height="match_parent"
-            android:layout_marginVertical="50dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/round"
-            android:backgroundTint="#e4e978" />
+            android:backgroundTint="#ffffff" />
 
         <ScrollView
             android:layout_width="wrap_content"
@@ -31,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
 
@@ -40,7 +64,7 @@
                     android:layout_width="300dp"
                     android:layout_height="250dp"
                     android:background="@drawable/round"
-                    android:backgroundTint="#e4e978"
+                    android:backgroundTint="#ffffff"
                     android:text="주간 인기글" />
 
                 <TextView
@@ -49,7 +73,7 @@
                     android:layout_height="250dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/round"
-                    android:backgroundTint="#e4e978"
+                    android:backgroundTint="#ffffff"
                     android:text="주간 인기글" />
 
                 <TextView
@@ -58,7 +82,7 @@
                     android:layout_height="250dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/round"
-                    android:backgroundTint="#e4e978"
+                    android:backgroundTint="#ffffff"
                     android:text="주간 인기글" />
 
 

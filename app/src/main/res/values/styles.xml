@@ -7,9 +7,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="MenuTextStyle">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">15dp</item>
         <item name="android:textColor">#393e46</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">8dp</item>
+    </style>
+    <style name="border">
+        <item name="borderWidth">2dp</item>
+        <item name="color">#000000</item>
     </style>
 </resources>
