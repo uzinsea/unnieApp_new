@@ -5,21 +5,19 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="MenuTitle">
         <item name="android:textSize">13dp</item>
-        <item name="android:textColor">#393e46</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColor">@color/TextColor</item>
 
     </style>
 
     <style name="PostTitle">
-
-
+        <item name="android:textColor">@color/TextColor</item>
         <item name="android:textSize">15dp</item>
-        <item name="android:textColor">#393e46</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">8dp</item>
     </style>
