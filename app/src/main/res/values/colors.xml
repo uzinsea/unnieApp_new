@@ -7,4 +7,6 @@
     <color name="AllBackground">#7CF8F7DE</color>
     <color name="TitleColor">#393e46</color>
 
+    <color name="PostColor">#8DFFC107</color>
+
 </resources>
