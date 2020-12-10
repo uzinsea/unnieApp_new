@@ -11,13 +11,20 @@
     <style name="MenuTitle">
         <item name="android:textSize">13dp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/TextColor</item>
+        <item name="android:textColor">@color/TitleColor</item>
 
     </style>
 
     <style name="PostTitle">
-        <item name="android:textColor">@color/TextColor</item>
+        <item name="android:textColor">@color/TitleColor</item>
         <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="inside_PT">
+        <item name="android:textColor">@color/TitleColor</item>
+        <item name="android:textSize">18dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">8dp</item>
     </style>
