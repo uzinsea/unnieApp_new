@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/AllBackground"
     android:orientation="vertical"
-    tools:context=".SchoolPost">
+    tools:context=".SchoolBoard">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -38,19 +38,25 @@
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/icon_write"
-
             />
     </FrameLayout>
 
-    <TextView
-        style="@style/PostTitle"
-        android:layout_margin="10dp"
+
+    <ListView
+        android:id="@+id/board_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:background="@drawable/round"
-        android:backgroundTint="#ffffff"
-        />
+        >
 
-
+    </ListView>
+<!--    <TextView-->
+<!--        style="@style/PostTitle"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/round"-->
+<!--        android:backgroundTint="#ffffff"-->
+<!--        >-->
+<!--    </TextView>-->
 </LinearLayout>
