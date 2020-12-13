@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "130591564862",
+    "project_id": "emaillogin-b91f8",
+    "storage_bucket": "emaillogin-b91f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130591564862:android:9a87825f8b7ca610629d6f",
+        "android_client_info": {
+          "package_name": "com.example.unnieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130591564862-i913iluboin2scp24ann34pbakloddm3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.unnieapp",
+            "certificate_hash": "688686c2b8cc26c18cf54503ae6be14823eeebd4"
+          }
+        },
+        {
+          "client_id": "130591564862-qerubiimnp12obvvlb6he174pdk34uem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiEWzFN7q7yRW7kBrdTJqu1FoDO7nHlQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130591564862-qerubiimnp12obvvlb6he174pdk34uem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,13 +9,13 @@
     >
 
     <ImageButton
+        android:id="@+id/btn_previous"
         android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_height="17dp"
         android:layout_margin="10dp"
         android:background="#04ffffff"
         android:scaleType="fitXY"
-        android:src="@drawable/icon_previous"
-        android:id="@+id/btn_previous"/>
+        android:src="@drawable/icon_previous" />
 
 
     <LinearLayout
@@ -25,14 +25,16 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/userid"
+            android:id="@+id/user_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/prompt_email"
-            android:selectAllOnFocus="true" />
+            android:selectAllOnFocus="true"
+            android:autofillHints=""
+            android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/user_pwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
@@ -50,14 +52,14 @@
                 android:id="@+id/btn_signin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:enabled="false"
+                android:enabled="true"
                 android:text="@string/action_sign_in" />
 
             <Button
                 android:id="@+id/btn_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:enabled="false"
+                android:enabled="true"
                 android:text="@string/action_sign_up" />
 
         </LinearLayout>
