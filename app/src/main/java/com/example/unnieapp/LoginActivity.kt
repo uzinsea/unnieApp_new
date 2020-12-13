@@ -33,7 +33,10 @@ class LoginActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-                            Log.d(TAG, "signInWithEmail:success")
+                            Toast.makeText(baseContext, "Authentication success", Toast.LENGTH_SHORT)
+                                .show()
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
                         } else {
                             Log.w(TAG, "signInWithEmail:failure", task.exception)
                             Toast.makeText(baseContext, "Authentication failed", Toast.LENGTH_SHORT)

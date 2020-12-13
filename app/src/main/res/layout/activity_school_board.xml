@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/AllBackground"
     android:orientation="vertical"
-    tools:context=".SchoolBoard">
+    tools:context=".SbActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -29,16 +29,16 @@
             style="@style/inside_PT"
             android:layout_gravity="center|center_vertical"
             android:background="@color/PostColor"/>
+
         <ImageButton
             android:id="@+id/btn_write"
             android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_margin="10dp"
+            android:layout_height="26dp"
             android:layout_gravity="right|center_vertical"
+            android:layout_margin="10dp"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
-            android:src="@drawable/icon_write"
-            />
+            android:src="@drawable/icon_write" />
     </FrameLayout>
 
 
