@@ -30,7 +30,7 @@ class SbActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val list_adapter = listAdapter(this, title_array)
+        val list_adapter = ListAdapter(this, title_array)
         listview.adapter = list_adapter
 
         database.addValueEventListener(object : ValueEventListener {
@@ -41,6 +41,7 @@ class SbActivity : AppCompatActivity() {
             //성공했을때
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 for (data in dataSnapshot.children) {
+
                     val modelResult = data.getValue(DataModel::class.java)
                     title_array.add(modelResult?.title.toString())
                 }
