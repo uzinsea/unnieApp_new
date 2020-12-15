@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/AllBackground"
     android:orientation="vertical"
-    tools:context=".SbActivity">
+    tools:context=".Sb_ListActivity">
 
     <FrameLayout
         android:layout_width="match_parent"

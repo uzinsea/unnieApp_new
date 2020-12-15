@@ -2,17 +2,15 @@ package com.example.unnieapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.btn_previous
 import kotlinx.android.synthetic.main.activity_sb.*
-import kotlinx.android.synthetic.main.activity_sb_input.*
 
 
-class SbActivity : AppCompatActivity() {
-    private val TAG = SbActivity::class.java.simpleName
+class Sb_ListActivity : AppCompatActivity() {
+    private val TAG = Sb_ListActivity::class.java.simpleName
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
     private val title_array = ArrayList<String>()

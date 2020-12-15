@@ -4,12 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_sb_input.*
 
 class BoardInputActivity : AppCompatActivity() {
 
-    private val TAG = BoardInputActivity::class.java.simpleName
+    private val TAG = BoardInputActivity::class.java
 
     private var uid: String? = null
 
@@ -33,7 +32,7 @@ class BoardInputActivity : AppCompatActivity() {
             )
             myRef.child("board").push().setValue(dataInput)
 
-            val intent = Intent(this,SbActivity::class.java)
+            val intent = Intent(this,Sb_ListActivity::class.java)
             startActivity(intent)
         }
     }

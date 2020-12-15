@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".BoardInputActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".SbActivity">
+        <activity android:name=".Sb_ListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

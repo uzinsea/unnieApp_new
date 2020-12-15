@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btn_school.setOnClickListener {
-            val intent = Intent(this,SbActivity::class.java)
+            val intent = Intent(this,Sb_ListActivity::class.java)
             startActivity(intent)
         }
 
