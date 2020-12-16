@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="진로고민 게시판"
-            style="@style/inside_PT"
+            style="@style/SubPostTitle"
             android:layout_gravity="center|center_vertical"
             android:background="@color/PostColor"/>
 
@@ -49,14 +49,5 @@
         >
 
     </ListView>
-<!--    <TextView-->
-<!--        style="@style/PostTitle"-->
-<!--        android:layout_margin="10dp"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:background="@drawable/round"-->
-<!--        android:backgroundTint="#ffffff"-->
-<!--        >-->
-<!--    </TextView>-->
+
 </LinearLayout>

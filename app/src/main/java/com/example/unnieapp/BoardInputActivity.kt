@@ -26,13 +26,11 @@ class BoardInputActivity : AppCompatActivity() {
             val myRef = database.getReference()
 
             val dataInput = DataModel(
-                uid.toString() ,
-                txt_title.text.toString(),
-                txt_content.text.toString()
+                uid.toString(), txt_title.text.toString(), txt_content.text.toString()
             )
             myRef.child("board").push().setValue(dataInput)
 
-            val intent = Intent(this,Sb_ListActivity::class.java)
+            val intent = Intent(this, Sb_ListActivity::class.java)
             startActivity(intent)
         }
     }

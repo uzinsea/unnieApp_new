@@ -5,8 +5,7 @@
     <color name="colorAccent">#03DAC5</color>
 
     <color name="AllBackground">#7CF8F7DE</color>
-    <color name="TitleColor">#393e46</color>
-
-    <color name="PostColor">#8DFFC107</color>
+    <color name="TextColor">#393e46</color>
+    <color name="PostColor">#FF9800</color>
 
 </resources>

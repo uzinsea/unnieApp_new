@@ -36,6 +36,6 @@ class ListAdapter(val context: Context, val list: ArrayList<String>,val list2 : 
     }
 
     override fun getCount(): Int {
-        return 3
+        return list.size
     }
 }

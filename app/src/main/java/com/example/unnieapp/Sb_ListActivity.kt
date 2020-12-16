@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.activity_sb.*
 
 class Sb_ListActivity : AppCompatActivity() {
     private val TAG = Sb_ListActivity::class.java.simpleName
+
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
     private val title_array = ArrayList<String>()
@@ -19,7 +20,6 @@ class Sb_ListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sb)
-
 
         auth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance().getReference().child("board")
@@ -31,6 +31,7 @@ class Sb_ListActivity : AppCompatActivity() {
         }
 
         val list_adapter = ListAdapter(this, title_array,contents_array)
+
         listview.adapter = list_adapter
 
         database.addValueEventListener(object : ValueEventListener {
