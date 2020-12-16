@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class LoginActivity : AppCompatActivity() {
@@ -47,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btn_signup.setOnClickListener {
-            val intent = Intent (this, SignUpActivity::class.java)
+            val intent = Intent(this,SignUpActivity::class.java)
             startActivity(intent)
         }
 
