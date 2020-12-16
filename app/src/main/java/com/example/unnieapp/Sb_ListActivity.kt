@@ -30,7 +30,7 @@ class Sb_ListActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val list_adapter = MainListAdapter(this, title_array,contents_array)
+        val list_adapter = ListAdapter(this, title_array,contents_array)
         listview.adapter = list_adapter
 
         database.addValueEventListener(object : ValueEventListener {
