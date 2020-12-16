@@ -14,6 +14,7 @@ class Sb_ListActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
     private val title_array = ArrayList<String>()
+    private val contents_array= ArrayList<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +30,7 @@ class Sb_ListActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val list_adapter = ListAdapter(this, title_array)
+        val list_adapter = MainListAdapter(this, title_array,contents_array)
         listview.adapter = list_adapter
 
         database.addValueEventListener(object : ValueEventListener {
@@ -42,6 +43,7 @@ class Sb_ListActivity : AppCompatActivity() {
                 for (data in dataSnapshot.children) {
                     val modelResult = data.getValue(DataModel::class.java)
                     title_array.add(modelResult?.title.toString())
+                    contents_array.add(modelResult?.contents.toString())
                 }
                 list_adapter.notifyDataSetChanged()
             }
