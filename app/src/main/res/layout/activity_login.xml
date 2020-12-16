@@ -4,9 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/AllBackground"
-    android:orientation="vertical"
-
-    >
+    android:orientation="vertical">
 
     <ImageButton
         android:id="@+id/btn_previous"
@@ -17,30 +15,55 @@
         android:scaleType="fitXY"
         android:src="@drawable/icon_previous" />
 
-
     <LinearLayout
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/user_email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/prompt_email"
-            android:selectAllOnFocus="true"
-            android:autofillHints=""
-            android:inputType="textEmailAddress" />
 
-        <EditText
-            android:id="@+id/user_pwd"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:hint="@string/prompt_password"
-            android:inputType="textPassword"
-            android:selectAllOnFocus="true" />
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="아이디" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="비밀번호" />
+
+            <EditText
+                android:id="@+id/user_pwd"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -63,8 +86,5 @@
                 android:text="@string/action_sign_up" />
 
         </LinearLayout>
-
     </LinearLayout>
-
-
 </FrameLayout>
