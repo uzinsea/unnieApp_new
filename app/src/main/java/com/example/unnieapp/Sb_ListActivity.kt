@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.btn_previous
-import kotlinx.android.synthetic.main.activity_sb.*
+import kotlinx.android.synthetic.main.activity_sb_list.*
 
 
 class Sb_ListActivity : AppCompatActivity() {
@@ -19,7 +19,7 @@ class Sb_ListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sb)
+        setContentView(R.layout.activity_sb_list)
 
         auth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance().getReference().child("board")

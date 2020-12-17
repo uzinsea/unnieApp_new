@@ -9,7 +9,7 @@
     </style>
 
     <style name="MenuTitle">
-        <item name="android:textSize">13dp</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/TextColor</item>
 
@@ -17,28 +17,28 @@
 
     <style name="MainPostTitle">
         <item name="android:textColor">@color/TextColor</item>
-        <item name="android:textSize">15dp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">8dp</item>
     </style>
 
     <style name="SubPostTitle">
-        <item name="android:textColor">@color/TextColor</item>
-        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">8dp</item>
     </style>
 
     <style name = "ListTitle">
         <item name="android:textColor">@color/TextColor</item>
-        <item name="android:textSize">15dp</item>
+        <item name="android:textSize">17sp</item>
         <item name="android:textStyle">bold</item>
 
 
     </style>
     <style name = "ListContents">
         <item name="android:textColor">@color/TextColor</item>
-        <item name="android:textSize">13dp</item>
+        <item name="android:textSize">15sp</item>
 
     </style>
 

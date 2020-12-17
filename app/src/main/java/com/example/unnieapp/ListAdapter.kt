@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_sb.view.*
+import kotlinx.android.synthetic.main.activity_sb_list.view.*
 import kotlinx.android.synthetic.main.listview_item.view.*
 
 class ListAdapter(val context: Context, val list: ArrayList<String>,val list2 : ArrayList<String>) : BaseAdapter() {

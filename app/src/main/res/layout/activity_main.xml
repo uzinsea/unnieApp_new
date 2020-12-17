@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,8 +17,8 @@
             android:layout_height="30dp"
 
             android:layout_centerVertical="true"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/chat"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/icon_chat"
             android:scaleType="fitXY"
 
             android:background="@android:color/transparent"/>
@@ -38,9 +37,9 @@
             android:id="@+id/btn_login"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             android:src="@drawable/icon_loign" />
@@ -77,7 +76,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="진로고민" />
+                    android:text="@string/sb_name" />
 
                 <ImageButton
                     android:id="@+id/btn_hospital"
@@ -91,21 +90,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="질병고민" />
+                    android:text="@string/hb_name" />
 
                 <ImageButton
-                    android:id="@+id/btn_goverment"
+                    android:id="@+id/btn_government"
                     style="@style/MenuImagebutton"
                     android:layout_gravity="center|top"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/icon_goverment" />
+                    android:src="@drawable/icon_government" />
 
                 <TextView
                     style="@style/MenuTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="정부정책" />
+                    android:text="@string/gb_name" />
 
                 <ImageButton
                     android:id="@+id/btn_jobsearch"
@@ -119,7 +118,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="채용정보" />
+                    android:text="@string/jb_name" />
 
                 <ImageButton
                     android:id="@+id/btn_donation"
@@ -133,7 +132,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="기부" />
+                    android:text="@string/db_name"
+                    android:layout_marginBottom="20dp"/>
 
 
             </LinearLayout>

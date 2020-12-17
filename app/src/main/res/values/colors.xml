@@ -2,10 +2,11 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#03DAC5</color>]
 
-    <color name="AllBackground">#7CF8F7DE</color>
+<!--    <color name="AllBackground">#7CF8F7DE</color>-->
+    <color name="AllBackground">#DCF4FF</color>
     <color name="TextColor">#393e46</color>
-    <color name="PostColor">#FF9800</color>
+    <color name="PostColor">#2196F3</color>
 
 </resources>
