@@ -7,19 +7,35 @@
     android:orientation="vertical"
     tools:context=".ChatroomActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/chat_recyclerview"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="55dp"
-        android:scrollbars="vertical"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
 
-    </androidx.recyclerview.widget.RecyclerView>
+        <EditText
+            android:id="@+id/your_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textSize="20sp"
+             />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="55dp"
+            android:layout_marginEnd="10dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -33,15 +49,15 @@
 
         <EditText
             android:id="@+id/chating_Text"
-            android:hint="메세지를 입력하세요"
-            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:maxLines="6"/>
+            android:background="@android:color/transparent"
+            android:hint="메세지를 입력하세요"
+            android:maxLines="6" />
 
 
         <Button

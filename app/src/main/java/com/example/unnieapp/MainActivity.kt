@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item_my_chat.*
 
@@ -27,8 +28,10 @@ class MainActivity : AppCompatActivity() {
         btn_chat.setOnClickListener {
             editor.putString("name",editText.text.toString())
             //        editor.commit();
+            Log.d("yourname",editor.toString())
             val intent = Intent(this, ChatroomActivity::class.java)
             startActivity(intent)
+
         }
 
 

@@ -20,9 +20,7 @@ class ChatroomActivity : AppCompatActivity() {
     //리사이클러뷰
     private val arrayList = ArrayList<ChatModel>()
 
-
     private val mAdapter = ChatAdapter(this, arrayList)
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +43,7 @@ class ChatroomActivity : AppCompatActivity() {
     private fun sendMessage() {
         val now = System.currentTimeMillis()
         val date = Date(now)
-        val sdf = SimpleDateFormat("yyyy-mm-dd")
+        val sdf = SimpleDateFormat("yyyy-MM-dd")
         val getTime = sdf.format(date)
 
         val item = ChatModel(

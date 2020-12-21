@@ -31,14 +31,14 @@
 
     <style name = "ListTitle">
         <item name="android:textColor">@color/TextColor</item>
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
 
 
     </style>
     <style name = "ListContents">
         <item name="android:textColor">@color/TextColor</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">20sp</item>
 
     </style>
 
