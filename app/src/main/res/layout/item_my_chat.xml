@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/chta_Me_Name"
+        android:id="@+id/chat_Me_Name"
         android:layout_width="wrap_content"
         android:layout_height="1dp" />
 
