@@ -11,18 +11,20 @@ import kotlinx.android.synthetic.main.item_my_chat.view.chat_Text
 import kotlinx.android.synthetic.main.item_my_chat.view.chat_Time
 import kotlinx.android.synthetic.main.item_your_chat.view.*
 
-class ChatAdapter(val context: Context, val arrayList: ArrayList<String>) :
+class ChatAdapter(val context: Context, val arrayList: ArrayList<ChatModel>) :
     Adapter<ViewHolder>() {
     private lateinit var preferences: SharedPreferences
 
-    fun addItem(item: ChatModel) {
-        arrayList?.add(item.toString())
+    fun addItem(item: ChatModel) {//아이템 추가
+        if (arrayList != null) {
+            arrayList.add(item)
+        }
     }
 
     override fun getItemViewType(position: Int): Int {//여기서 뷰타입을 1, 2로 바꿔서 지정해줘야 내채팅 너채팅을 바꾸면서 쌓을 수 있음
         preferences = context.getSharedPreferences("USERSIGN", Context.MODE_PRIVATE)
         //내 아이디와 arraylist의 name이 같다면 내꺼 아니면 상대꺼
-        return if (arrayList[position] == preferences.getString("name", "")) {
+        return if (arrayList.get(position).name == preferences.getString("name", "")) {
             1
         } else {
             2
@@ -41,20 +43,20 @@ class ChatAdapter(val context: Context, val arrayList: ArrayList<String>) :
         }
     }
 
-    override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
+    override fun onBindViewHolder(viewHolder: RecyclerView.ViewHolder, i: Int) {
         //onCreateViewHolder에서 리턴받은 뷰홀더가 Holder라면 내채팅, item_my_chat의 뷰들을 초기화 해줌
         if (viewHolder is Holder) {
-            viewHolder.chat_Text?.setText(arrayList[i])
-            viewHolder.chat_Time?.setText(arrayList[i])
+            viewHolder.chat_Text?.setText(arrayList.get(i).script)
+            viewHolder.chat_Time?.setText(arrayList.get(i).date_time)
         }
         //onCreateViewHolder에서 리턴받은 뷰홀더가 Holder2라면 상대의 채팅, item_your_chat의 뷰들을 초기화 해줌
         else if (viewHolder is Holder2) {
             viewHolder.chat_You_Image?.setImageResource(R.mipmap.ic_launcher)
-            viewHolder.chat_You_Name?.setText(arrayList[i])
-            viewHolder.chat_Text?.setText(arrayList[i])
-            viewHolder.chat_Time?.setText(arrayList[i])
-
+            viewHolder.chat_You_Name?.setText(arrayList.get(i).name)
+            viewHolder.chat_Text?.setText(arrayList.get(i).script)
+            viewHolder.chat_Time?.setText(arrayList.get(i).date_time)
         }
+
     }
 
     override fun getItemCount(): Int {

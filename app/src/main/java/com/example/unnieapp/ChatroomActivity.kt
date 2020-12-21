@@ -18,7 +18,8 @@ class ChatroomActivity : AppCompatActivity() {
     private lateinit var preferences: SharedPreferences
 
     //리사이클러뷰
-    private val arrayList = ArrayList<String>()
+    private val arrayList = ArrayList<ChatModel>()
+
 
     private val mAdapter = ChatAdapter(this, arrayList)
 
@@ -53,7 +54,7 @@ class ChatroomActivity : AppCompatActivity() {
             "example",
             getTime
         )
-        mAdapter.addItem(item)
+        arrayList.add(item)
         mAdapter.notifyDataSetChanged()
 
         //채팅 입력창 초기화
