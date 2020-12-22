@@ -16,9 +16,7 @@ class ChatAdapter(val context: Context, val arrayList: ArrayList<ChatModel>) :
     private lateinit var preferences: SharedPreferences
 
     fun addItem(item: ChatModel) {//아이템 추가
-        if (arrayList != null) {
-            arrayList.add(item)
-        }
+        arrayList.add(item)
     }
 
     override fun getItemViewType(position: Int): Int {//여기서 뷰타입을 1, 2로 바꿔서 지정해줘야 내채팅 너채팅을 바꾸면서 쌓을 수 있음
@@ -66,18 +64,18 @@ class ChatAdapter(val context: Context, val arrayList: ArrayList<ChatModel>) :
     //내가친 채팅 뷰홀더
     inner class Holder(itemView: View) : ViewHolder(itemView) {
         //친구목록 모델의 변수들 정의하는부분
-        val chat_Text = itemView?.chat_Text
-        val chat_Time = itemView?.chat_Time
+        val chat_Text = itemView.chat_Text
+        val chat_Time = itemView.chat_Time
     }
 
     //상대가친 채팅 뷰홀더
     inner class Holder2(itemView: View) : ViewHolder(itemView) {
 
         //친구목록 모델의 변수들 정의하는부분
-        val chat_You_Image = itemView?.chat_You_Image
-        val chat_You_Name = itemView?.chat_You_Name
-        val chat_Text = itemView?.chat_Text
-        val chat_Time = itemView?.chat_Time
+        val chat_You_Image = itemView.chat_You_Image
+        val chat_You_Name = itemView.chat_You_Name
+        val chat_Text = itemView.chat_Text
+        val chat_Time = itemView.chat_Time
     }
 
 }

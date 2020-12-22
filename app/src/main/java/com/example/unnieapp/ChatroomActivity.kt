@@ -27,6 +27,7 @@ class ChatroomActivity : AppCompatActivity() {
         setContentView(R.layout.activity_chatroom)
         preferences = getSharedPreferences("USERSIGN", Context.MODE_PRIVATE)
 
+
         //어댑터 선언
         chat_recyclerview.adapter = mAdapter
         //레이아웃 매니저  ??

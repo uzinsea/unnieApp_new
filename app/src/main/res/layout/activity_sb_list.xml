@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/AllBackground"
-    tools:context=".Sb_ListActivity">
+    tools:context=".List_Sb_Activity">
 
     <LinearLayout
         android:id="@+id/sb_list_layout"

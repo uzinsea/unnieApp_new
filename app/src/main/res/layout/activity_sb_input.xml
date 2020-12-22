@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BoardInputActivity"
+    tools:context=".List_InputActivity"
     android:background="@color/AllBackground">
 
     <LinearLayout
@@ -14,14 +13,14 @@
         android:layout_gravity="center"
         android:gravity="center"
 
-        >
+        tools:ignore="UselessParent">
 
     <EditText
         android:id="@+id/txt_title"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="제목을 입력하세요"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:inputType="text"
         android:autofillHints=""/>
 
@@ -30,7 +29,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="내용을 입력하세요"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:inputType="text"
         android:autofillHints=""
         />

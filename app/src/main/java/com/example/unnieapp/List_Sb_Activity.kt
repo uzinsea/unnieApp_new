@@ -9,8 +9,8 @@ import kotlinx.android.synthetic.main.activity_login.btn_previous
 import kotlinx.android.synthetic.main.activity_sb_list.*
 
 
-class Sb_ListActivity : AppCompatActivity() {
-    private val TAG = Sb_ListActivity::class.java.simpleName
+class List_Sb_Activity : AppCompatActivity() {
+    private val TAG = List_Sb_Activity::class.java.simpleName
 
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
@@ -25,7 +25,7 @@ class Sb_ListActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().getReference().child("board")
 
         btn_write.setOnClickListener {
-            val intent = Intent(this, BoardInputActivity::class.java)
+            val intent = Intent(this, List_InputActivity::class.java)
             intent.putExtra("uid", auth.currentUser?.uid)
             startActivity(intent)
         }

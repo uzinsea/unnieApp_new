@@ -6,15 +6,15 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_signup.*
+import kotlinx.android.synthetic.main.activity_login_signup.*
 
-class SignUpActivity : AppCompatActivity() {
+class Login_SignUpActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val TAG = "EmailPassword"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
+        setContentView(R.layout.activity_login_signup)
 
         auth = FirebaseAuth.getInstance()
 
