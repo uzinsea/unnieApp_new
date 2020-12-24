@@ -3,42 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".List_InputActivity"
-    android:background="@color/AllBackground">
+    android:background="@color/AllBackground"
+    tools:context=".List_InputActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_gravity="center"
         android:gravity="center"
+        android:orientation="vertical"
 
         tools:ignore="UselessParent">
 
-    <EditText
-        android:id="@+id/txt_title"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="제목을 입력하세요"
-        android:textSize="17sp"
-        android:inputType="text"
-        android:autofillHints=""/>
 
-    <EditText
-        android:id="@+id/txt_content"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="내용을 입력하세요"
-        android:textSize="17sp"
-        android:inputType="text"
-        android:autofillHints=""
-        />
+        <EditText
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:hint="제목을 입력하세요"
+            android:inputType="text"
+            android:textSize="17sp" />
 
-    <Button
-        android:id="@+id/btn_wrtie_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="입력" />
+        <EditText
+            android:id="@+id/txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:hint="내용을 입력하세요"
+            android:gravity="start"
+            android:maxLines="10"
+            android:inputType="text"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_wrtie_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="입력" />
     </LinearLayout>
 
 

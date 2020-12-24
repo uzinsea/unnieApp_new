@@ -18,6 +18,7 @@ class Login_SignUpActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
+        //val name = user_new_nickname
         val email = user_new_email
         val password = user_new_pwd
 

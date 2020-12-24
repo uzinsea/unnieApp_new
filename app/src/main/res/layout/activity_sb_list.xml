@@ -29,9 +29,10 @@
 
             <TextView
                 style="@style/SubPostTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center|center_vertical"
+               android:gravity="center"
                 android:layout_margin="10dp"
                 android:background="@color/PostColor"
                 android:text="@string/sb_name" />
