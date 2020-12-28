@@ -5,7 +5,8 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import com.example.unnieapp.chat.ChatroomActivity
+import com.example.unnieapp.list.List_Sb_Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,8 +25,6 @@ class MainActivity : AppCompatActivity() {
         //버튼을 클릭하면 입력한 이름을 쉐어드프리퍼런스에 내이름을 저장한다.
         //또한 그 이름을 가지고 채팅방으로 이동한다.
         btn_chat.setOnClickListener {
-
-            editor.putString("name",editText.toString())
 
             val intent = Intent(this, ChatroomActivity::class.java)
             startActivity(intent)

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/AllBackground"
-    tools:context=".list.List_Sb_Activity">
+    tools:context=".chat.ChatListActivity">
+
 
     <LinearLayout
-        android:id="@+id/sb_list_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <FrameLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
@@ -21,7 +22,6 @@
                 android:id="@+id/btn_previous"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_gravity="center_vertical"
                 android:layout_margin="10dp"
                 android:background="@android:color/transparent"
                 android:scaleType="fitXY"
@@ -31,31 +31,27 @@
                 style="@style/SubPostTitle"
                 android:layout_width="150dp"
                 android:layout_height="43dp"
-                android:layout_gravity="center|center_vertical"
-               android:gravity="center"
                 android:layout_margin="10dp"
+                android:layout_gravity="center"
                 android:background="@color/PostColor"
-                android:text="@string/sb_name" />
+                android:gravity="center"
+                android:text="채팅목록" />
         </FrameLayout>
 
-        <ListView
-            android:id="@+id/listview"
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+             />
+
     </LinearLayout>
 
-
-    <ImageButton
-        android:id="@+id/btn_write"
+    <ImageView
+        android:id="@+id/start_chat"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_gravity="end|bottom"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        android:src="@drawable/icon_write"
-        />
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:src="@drawable/icon_write" />
 
 
 </FrameLayout>

@@ -1,4 +1,4 @@
-package com.example.unnieapp
+package com.example.unnieapp.chat
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.*
+import com.example.unnieapp.R
 import kotlinx.android.synthetic.main.item_my_chat.view.chat_Text
 import kotlinx.android.synthetic.main.item_my_chat.view.chat_Time
 import kotlinx.android.synthetic.main.item_your_chat.view.*

@@ -1,8 +1,10 @@
-package com.example.unnieapp
+package com.example.unnieapp.list
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.unnieapp.MainActivity
+import com.example.unnieapp.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.btn_previous

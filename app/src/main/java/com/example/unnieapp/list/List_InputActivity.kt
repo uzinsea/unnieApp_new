@@ -1,8 +1,9 @@
-package com.example.unnieapp
+package com.example.unnieapp.list
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.unnieapp.R
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_sb_input.*
 

@@ -1,17 +1,12 @@
-package com.example.unnieapp
+package com.example.unnieapp.list
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.ListView
 import android.widget.TextView
-import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_sb_list.view.*
-import kotlinx.android.synthetic.main.listview_item.view.*
+import com.example.unnieapp.R
 
 class ListAdapter(val context: Context, val list: ArrayList<String>,val list2 : ArrayList<String>)
     : BaseAdapter() {

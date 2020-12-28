@@ -1,13 +1,11 @@
-package com.example.unnieapp
+package com.example.unnieapp.chat
 
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.unnieapp.R
 import kotlinx.android.synthetic.main.activity_chatroom.*
 import java.text.SimpleDateFormat
 import java.util.*

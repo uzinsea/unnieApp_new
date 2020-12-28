@@ -45,7 +45,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-database-ktx'
 
+    //node.js
     implementation 'com.github.nkzawa:socket.io-client:0.3.0'
+
+
     
 
 }

@@ -1,4 +1,4 @@
-package com.example.unnieapp
+package com.example.unnieapp.list
 
 data class DataModel(
     var uid : String = "",
