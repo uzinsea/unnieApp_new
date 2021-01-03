@@ -9,25 +9,28 @@ import kotlinx.android.synthetic.main.activity_sb_input.*
 
 class List_InputActivity : AppCompatActivity() {
 
-    private val TAG = List_InputActivity::class.java
 
     private var uid: String? = null
-
+    private var id: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sb_input)
 
-        if (intent.hasExtra("uid")) {
-            uid = intent.getStringExtra("uid")
-        }
+
+        uid = intent.getStringExtra("uid")
+        id = intent.getStringExtra("id").toString()
+
 
         btn_wrtie_check.setOnClickListener {
             val database = FirebaseDatabase.getInstance()
             val myRef = database.getReference()
 
             val dataInput = DataModel(
-                uid.toString(), txt_title.text.toString(), txt_content.text.toString()
+                id,
+                uid.toString(),
+                txt_title.text.toString(),
+                txt_content.text.toString()
             )
             myRef.child("board").push().setValue(dataInput)
 

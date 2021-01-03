@@ -29,7 +29,7 @@
         <EditText
             android:id="@+id/txt_content"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="300dp"
             android:autofillHints=""
             android:background="@android:color/transparent"
             android:hint="내용을 입력하세요"

@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/AllBackground"
     android:orientation="vertical"
     android:paddingStart="8dp"
-    android:paddingEnd="8dp"
->
+    android:paddingEnd="8dp">
 
     <TextView
         android:id="@+id/result_title"
         style="@style/ListTitle"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_modify"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/result_title"
+        android:text="수정" />
 
     <TextView
         android:id="@+id/result_contents"
         style="@style/ListContents"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_title" />
 
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_modify"
+        android:layout_marginLeft="30dp"
 
-</LinearLayout>
+        android:layout_toEndOf="@id/result_title"
+        android:text="삭제" />
+
+    <TextView
+        android:id="@+id/result_id"
+        style="@style/ListContents"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_contents"
+
+        />
+
+</RelativeLayout>
