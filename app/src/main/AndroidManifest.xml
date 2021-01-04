@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.unnieapp">
-    //인터넷연결
+
     <uses-permission android:name="android.permission.INTERNET" />
-    //node.js를 위한 권한
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chat.ChatListActivity"></activity>
+        <activity android:name=".list.List_DetailActivity"></activity>
+        <activity android:name=".chat.ChatListActivity" />
         <activity android:name=".chat.ChatroomActivity" />
         <activity android:name=".list.List_InputActivity" />
         <activity android:name=".Login_SignUpActivity" />

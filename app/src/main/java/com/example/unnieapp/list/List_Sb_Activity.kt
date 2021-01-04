@@ -2,6 +2,9 @@ package com.example.unnieapp.list
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.unnieapp.MainActivity
 import com.example.unnieapp.R
@@ -9,7 +12,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.btn_previous
 import kotlinx.android.synthetic.main.activity_sb_list.*
-import kotlinx.android.synthetic.main.listview_item.*
 
 
 class List_Sb_Activity : AppCompatActivity() {
@@ -29,6 +31,7 @@ class List_Sb_Activity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance().getReference().child("board")
 
+        //글쓰기 버튼 누를 때
         btn_write.setOnClickListener {
             val intent = Intent(this, List_InputActivity::class.java)
             intent.putExtra("uid", auth.currentUser?.uid)
@@ -57,6 +60,26 @@ class List_Sb_Activity : AppCompatActivity() {
             }
         })
 
+        //리스트뷰 아이템 클릭시
+        listview.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
+            val item = list_adapter.getItem(position)
+
+            Toast.makeText(this, "클릭", Toast.LENGTH_SHORT).show()
+
+            val intent = Intent(this, List_DetailActivity::class.java)
+            intent.putExtra("id", auth.currentUser?.email)
+            intent.putExtra("title", item.toString())
+            startActivity(intent)
+        }
+//
+//        btn_delete.setOnClickListener {
+//            database = FirebaseDatabase.getInstance().getReference().child("board")
+//            database.removeValue().addOnSuccessListener {
+//                Toast.makeText(baseContext, "글이 삭제되었습니다", Toast.LENGTH_SHORT).show()
+//            }.addOnFailureListener {
+//                Toast.makeText(baseContext, "글 삭제가 실패되었습니다", Toast.LENGTH_SHORT).show()
+//            }
+//        }
 
 
         btn_previous.setOnClickListener {

@@ -8,13 +8,18 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.unnieapp.R
 
-class ListAdapter(    val context: Context,    val list: ArrayList<String>,    val list2: ArrayList<String>,    val list3: ArrayList<String>) : BaseAdapter() {
+class ListAdapter(
+    val context: Context,
+    val list: ArrayList<String>,
+    val list2: ArrayList<String>,
+    val list3: ArrayList<String>,
+) : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val rootView: View = LayoutInflater.from(context).inflate(R.layout.listview_item, null)
 
         val titleView: TextView = rootView.findViewById(R.id.result_title)
-        val contentsView: TextView = rootView.findViewById(R.id.result_contents)
+        val contentsView: TextView = rootView.findViewById(R.id.result_content)
         val idView: TextView = rootView.findViewById(R.id.result_id)
 
         titleView.text = list[position]
