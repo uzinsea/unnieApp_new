@@ -19,12 +19,12 @@ class ListAdapter(
         val rootView: View = LayoutInflater.from(context).inflate(R.layout.listview_item, null)
 
         val titleView: TextView = rootView.findViewById(R.id.result_title)
-        val contentsView: TextView = rootView.findViewById(R.id.result_content)
-        val idView: TextView = rootView.findViewById(R.id.result_id)
+       // val contentsView: TextView = rootView.findViewById(R.id.result_content)
+     //   val idView: TextView = rootView.findViewById(R.id.result_id)
 
         titleView.text = list[position]
-        contentsView.text = list2[position]
-        idView.text = list3[position]
+   //     contentsView.text = list2[position]
+    //    idView.text = list3[position]
 
         return rootView
 

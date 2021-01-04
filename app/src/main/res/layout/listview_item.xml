@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/AllBackground"
+    android:background="?attr/selectableItemBackground"
     android:orientation="vertical"
     android:paddingStart="8dp"
     android:paddingEnd="8dp">
@@ -15,22 +15,22 @@
 
 
 
-    <TextView
-        android:id="@+id/result_content"
-        style="@style/ListContents"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/result_title" />
+<!--    <TextView-->
+<!--        android:id="@+id/result_content"-->
+<!--        style="@style/ListContents"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/result_title" />-->
 
 
 
-    <TextView
-        android:id="@+id/result_id"
-        style="@style/ListContents"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/result_content"
+<!--    <TextView-->
+<!--        android:id="@+id/result_id"-->
+<!--        style="@style/ListContents"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/result_content"-->
 
-        />
+<!--        />-->
 
 </RelativeLayout>

@@ -4,13 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.unnieapp.MainActivity
 import com.example.unnieapp.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.btn_previous
+import kotlinx.android.synthetic.main.activity_sb_input.*
 import kotlinx.android.synthetic.main.activity_sb_list.*
 
 
@@ -62,13 +62,13 @@ class List_Sb_Activity : AppCompatActivity() {
 
         //리스트뷰 아이템 클릭시
         listview.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
-            val item = list_adapter.getItem(position)
-
-            Toast.makeText(this, "클릭", Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, List_DetailActivity::class.java)
-            intent.putExtra("id", auth.currentUser?.email)
-            intent.putExtra("title", item.toString())
+            intent.putExtra("id",id_array.get(position))
+            intent.putExtra("title",title_array.get(position))
+            intent.putExtra("contents",contents_array.get(position) )
+
+
             startActivity(intent)
         }
 //
