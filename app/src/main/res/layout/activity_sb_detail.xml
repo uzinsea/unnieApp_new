@@ -61,7 +61,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_toEndOf="@id/result_title"
-                android:text="수정" />
+                android:text="수정"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/btn_delete"
@@ -69,9 +70,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/btn_modify"
                 android:layout_marginLeft="30dp"
-
                 android:layout_toEndOf="@id/result_title"
-                android:text="삭제" />
+                android:text="삭제"
+                android:visibility="invisible" />
         </LinearLayout>
 
     </LinearLayout>

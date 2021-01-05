@@ -64,23 +64,15 @@ class List_Sb_Activity : AppCompatActivity() {
         listview.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
 
             val intent = Intent(this, List_DetailActivity::class.java)
-            intent.putExtra("id",id_array.get(position))
-            intent.putExtra("title",title_array.get(position))
-            intent.putExtra("contents",contents_array.get(position) )
+
+            intent.putExtra("id", id_array.get(position))
+            intent.putExtra("title", title_array.get(position))
+            intent.putExtra("contents", contents_array.get(position))
+            intent.putExtra("now_id", auth.currentUser?.email)
 
 
             startActivity(intent)
         }
-//
-//        btn_delete.setOnClickListener {
-//            database = FirebaseDatabase.getInstance().getReference().child("board")
-//            database.removeValue().addOnSuccessListener {
-//                Toast.makeText(baseContext, "글이 삭제되었습니다", Toast.LENGTH_SHORT).show()
-//            }.addOnFailureListener {
-//                Toast.makeText(baseContext, "글 삭제가 실패되었습니다", Toast.LENGTH_SHORT).show()
-//            }
-//        }
-
 
         btn_previous.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
