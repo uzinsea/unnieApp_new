@@ -10,8 +10,6 @@ import kotlinx.android.synthetic.main.activity_sb_input.*
 
 class List_InputActivity : AppCompatActivity() {
 
-
-    private var uid: String? = null
     private var id: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +17,6 @@ class List_InputActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sb_input)
 
 
-        uid = intent.getStringExtra("uid")
         id = intent.getStringExtra("id").toString()
 
 
@@ -29,7 +26,6 @@ class List_InputActivity : AppCompatActivity() {
 
             val dataInput = DataModel(
                 id,
-                uid.toString(),
                 txt_title.text.toString(),
                 txt_content.text.toString())
             myRef.child("board").push().setValue(dataInput)

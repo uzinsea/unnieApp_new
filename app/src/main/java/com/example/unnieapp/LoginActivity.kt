@@ -32,13 +32,14 @@ class LoginActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-                            Toast.makeText(baseContext, "Authentication success", Toast.LENGTH_SHORT)
+                            Toast.makeText(baseContext, "로그인에 성공하셨습니다", Toast.LENGTH_SHORT)
                                 .show()
                             val intent = Intent(this, MainActivity::class.java)
+                            intent.putExtra("id", auth.currentUser?.email)
                             startActivity(intent)
                         } else {
                             Log.w(TAG, "signInWithEmail:failure", task.exception)
-                            Toast.makeText(baseContext, "Authentication failed", Toast.LENGTH_SHORT)
+                            Toast.makeText(baseContext, "로그인에 실패하셨습니다", Toast.LENGTH_SHORT)
                                 .show()
                         }
                     }
